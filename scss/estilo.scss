@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import "colores";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-attachment: fixed;
+    display: grid;
+    overflow-x: hidden;
+}
+
+
+
+
+.container{
+    padding: 30px;
+    color: $gold1;
+    text-align: center;
+}
+
+.nav-link{
+    position: relative;
+    left: 350px;
+    bottom:55px;
+    font-size: 30px;    
+    padding: 20px 10px;  
+} 
+
+.nav-item a:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 3px 3px 0px $gray2;
+    filter: none;
+}  
+.logo{
+    position: relative;
+    right: 120px;
+    bottom: 35px;
+    
+}
+
+
+.servicios{
+    background-color: $black3;
+    
+      
+}
+
+.subtitles{
+    font-size: 42px;
+}
+
+h2{
+    animation-name: subtitles;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes subtitles{
+    0%{
+        opacity: 0;
+
+    }
+
+       50%{
+        color: $brown;
+    }
+
+        
+    100%{
+        opacity: 1;
+
+    }
+}
+.copy__section{
+    color: $white1;
+    font-size: 22px;
+    line-height: 16px;
+    margin-bottom: 60px;
+
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 30%;
+    padding: 1% 2px;
+    overflow: hidden;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 6px $shadow;
+}
+
+.card__img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;}
+
+.cards__text{
+    width: 95%;
+    margin-left: auto;
+    padding-right: 25px;}
+
+.card__list{
+    color: $gold2;
+    font-weight: 520;
+    margin: 25px 0 12px;
+    font-size: 18px;
+       
+}    
+
+.card__title{
+    font-size: 40px;
+    font-weight: 700;
+    color: $withe;
+    margin-bottom: 8px;
+}
+
+.card__copy{
+    color:$gray2;
+    margin-bottom: 16px;
+}
+
+.card__button{
+    display: block;
+    background: linear-gradient(180deg, $ligth1 0%, $ligth2 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 98%;
+    color: $black1;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0px;
+
+}
+
+.container-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.background{
+    width: 60%;
+    height: 335px;
+    
+    position: relative;
+    margin-bottom: 60px;
+    border: 4px solid ;
+    
+
+}
+
+.testimonios{
+    background: $black3;
+}
+
+.testimonio-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonio__card{
+    width: 30%;
+    height: 500px;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 120%;
+}
+
+.testimonio__historia{
+    font-size: 30px;
+    padding: 10px;
+}
+
+h4{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.testimonio__img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+.testimonio__copy{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    color: $withe;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    padding: 2px 8px;
+      
+}
+
+.testimonio__name{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.testimonio__text{
+    padding: 40px 0px;
+    width: 90%;
+    margin: 0 auto;
+    color: $gray2;
+}
+
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    font-size: 20px;
+   
+}
+.check__number{
+    font-size: 30px;
+}
+
+.bx-check{
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    color: $withe;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.newsletter{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+
+}
+
+.newsletter--modificador{
+    margin: 0;
+    width: 88%;
+}
+.subtitle--modificador{
+    padding: 30px;
+}
+
+
+.newsletter{
+    position: relative;
+    bottom: 60px;
+    right: 60px;
+
+}
+
+.btn-outline-secondary{
+    
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    color: $withe;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+  
+    
+}
+
+
+.footer{
+    background-color: $gray1;
+    
+    
+}
+
+.footer__caption{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    color: $black1;
+}
+
+.title__footer{
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: $black1;
+    
+}
+
+
+.dowload{
+    width: 100%;
+}
+
+
+
+
+.get-email{
+    width: 30%;
+    padding: 0px;
+    position: relative;
+    right: 40px;
+}
+
+.socialmedia{
+    margin-top: 24px;
+    display: flex;
+    color: $black2;
+}
+
+.socialmedia__icon{
+    font-size: 15px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia__legend{
+    color: $black2;
+    margin-right: 16px;
+}
+
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: $withe;
+    
+}
+
+.item__contact{
+    width: 25%;
+    color: $withe;
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    
+}
+
+.item__contact--gold{
+    background: linear-gradient(180deg, #F4BD76 0%, #F6CD8F 100%);
+    color: $black1;
+    
+}
+
+.subtitle--modificador{
+    color: $white1;
+}
+
+.form-control-file{
+    padding: 5px 3px;
+    position: relative;
+    bottom: 40px;
+}
+
+@media screen and (max-width:576px) and (max-width:768px){ 
+    body{
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat;
+        background-size: 90%; 
+        overflow-x: inherit;
+        
+        
+    }
+       
+    .subtitles{
+        font-size: 70px;
+    }
+
+    .copy__section{
+        font-size: 38px;
+        color: $brown;
+    }
+
+    .servicios .card{
+        width: 90%;
+    }
+    .card{
+        width: 70%;
+    }
+
+    
+    .testimonio__card{
+        width: 95%;
+    }
+
+    .testimonio__name{
+        font-size: 70px;
+    }
+    .card__img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;}
+
+    .card__list{
+        font-size: 20px;
+    }
+
+    .card__title{
+        font-size: 30px;
+        font-weight: 100;
+        color: $withe;
+        margin-bottom: 8px;
+    }
+
+    .cards__text{
+       font-size: 26px;
+       font-weight: 0;
+    
+    }
+
+    .background{
+        width: 120%;
+        height: 340px;        
+        position: relative;
+        right: 5px;
+        border: 8px solid ;      
+    }
+    
+
+    .servicios{
+        background-color: $white1;
+    }
+
+    .testimonios{
+        background: $white1;
+    }
+    
+    
+    
+
+    .testimonio__historia{
+        font-size: 29px;
+        color: $gold1;
+        padding: 10px;
+    }
+    h4{
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    .testimonio__name{
+        font-size: 40px;
+        line-height: 40px;
+        position: relative;
+        top: 10px;
+    }
+
+    .testimonio__edad{
+        font-size: 30px;
+        position: relative;
+        top: 15px;
+    }
+
+    
+    .subtitle--modificador{
+        font-size: 40px;
+        color: $withe;
+    }
+
+    .copyright{
+        font-size: 25px;
+    }
+
+    .title__footer{
+        font-size: 30px;
+        color: $black1;
+    }
+    
+   .socialmedia{
+    margin-top: 24px;
+    display: flex;
+    color: $black2;
+}
+
+.socialmedia__icon{
+    font-size: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia__legend{
+    color: $black2;
+    margin-right: 12px;
+}
+.contact__title{
+    font-size: 26px;
+    position: relative;
+    right: 5px;
+    
+}
+
+.check__number{
+    font-size: 27px;
+    
+}
+
+.testimonio-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.testimonio__card{
+    width: 30%;
+    height: 750px;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 120%;
+    
+}
+
+.testimonio__img{
+    width: 100%;
+    height: 90%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+    
+}
+
+
+
+    
+.logo{
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+    height: 100px;
+    
+}
+
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1200px){ 
+    body{
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat;
+        background-size: 90%; 
+        overflow-x: inherit;
+        
+        
+    }
+    .container{
+        padding: 0px;
+        
+    }
+    
+    .nav-link{
+        position: relative;
+        left: 10px;
+        bottom:50px;
+        font-size: 20px;    
+          
+    } 
+       
+    .subtitles{
+        font-size: 50px;
+    }
+
+    .copy__section{
+        font-size: 20px;
+        color: $brown;
+    }
+
+    .servicios .card{
+        width: 70%;
+        
+       
+    }
+    .card{
+        width: 90%;
+    }
+
+    
+    .testimonio__card{
+        width: 95%;
+    }
+
+    .testimonio__name{
+        font-size: 70px;
+    }
+    .card__img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;}
+
+    .card__list{
+        font-size: 25px;
+    }
+
+    .card__title{
+        font-size: 37px;
+        font-weight: 100;
+        color: $withe;
+        margin-bottom: 8px;
+    }
+
+    .cards__text{
+       font-size: 25px;
+         
+    }
+
+    .background{       
+        position: relative;
+        left: 5%;    
+        border: none;
+    }
+    
+
+    .servicios{
+        background-color: $white1;
+        
+    }
+
+    .testimonios{
+        background: $white1;
+    }
+    
+    
+    
+
+    .testimonio__historia{
+        font-size: 29px;
+        color: $gold1;
+        padding: 10px;
+    }
+    h4{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .testimonio__name{
+        font-size: 30px;
+        line-height: 40px;
+        position: relative;
+        top: 10px;
+    }
+
+    .testimonio__edad{
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+    }
+
+    .input{
+        position: relative;
+        bottom: 45px;
+        left: 45px;
+        padding: 7px;
+    }
+    
+    
+
+    .subtitle--modificador{
+        font-size: 30px;
+        color: $withe;
+    }
+
+    .copyright{
+        font-size: 15px;
+    }
+
+    .title__footer{
+        font-size: 25px;
+        color: $black1;
+        position: relative;
+        left: 10px;
+        padding: 5px;
+    }
+    
+   .socialmedia{
+    margin-top: 20px;
+    display: flex;
+    color: $black2;
+}
+
+.socialmedia__icon{
+    font-size: 20px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia__legend{
+    color: $black2;
+    margin-right: 16px;
+}
+.contact__title{
+    font-size: 20px;
+    position: relative;
+    right: 5px;
+    
+}
+
+.check__number{
+    font-size: 27px;
+    
+}
+
+.testimonio-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.testimonio__card{
+    width: 30%;
+    height: 750px;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 120%;
+    
+}
+
+.testimonio__img{
+    width: 100%;
+    height: 90%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+    
+}
+
+    
+.logo{
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+    height: 100px;
+    
+}
+
+
+}
+
+
+
+
+@media screen and (min-width:575px) and (max-width:768px) {
+    body{
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat;
+        background-size: 50%; 
+        overflow-x: inherit;
+        
+        
+    }
+    .container{
+        padding: 0;
+        
+        
+    }
+    
+    .nav-link{
+        font-size: 20px;    
+          
+    } 
+       
+    .subtitles{
+        font-size: 40px;
+    }
+
+    .copy__section{
+        font-size: 16px;
+        color: $brown;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    
+    .testimonio__card{
+        width: 95%;
+    }
+
+    .testimonio__name{
+        font-size: 70px;
+    }
+    .card__img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;}
+
+    .card__list{
+        font-size: 25px;
+    }
+
+    .card__title{
+        font-size: 37px;
+        font-weight: 100;
+        color: $withe;
+        margin-bottom: 8px;
+    }
+
+    .cards__text{
+       font-size: 25px;
+         
+    }
+
+    .background{       
+       display: none;
+    }
+    
+    .servicios .card{
+        background-color: $white1;
+        
+        
+    }
+.servicios{
+    background-color: white;
+}
+    .testimonios{
+        background: $white1;
+    }
+    
+    .testimonio__historia{
+        font-size: 20px;
+        color: $gold1;
+        padding: 10px;
+    }
+    h4{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .testimonio__name{
+        font-size: 30px;
+        line-height: 40px;
+        position: relative;
+        top: 10px;
+    }
+
+    .testimonio__edad{
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+    }
+
+        
+    .subtitle--modificador{
+        font-size: 30px;
+        color: $withe;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+
+    .title__footer{
+        font-size: 25px;
+        color: $black1;
+        position: relative;
+        left: 10px;
+        padding: 5px;
+    }
+    
+   .socialmedia{
+    margin-top: 20px;
+    display: flex;
+    color: $black2;
+}
+
+.socialmedia__icon{
+    font-size: 14px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia__legend{
+    color: $black2;
+    margin-right: 12px;
+}
+.contact__title{
+    font-size: 20px;
+    position: relative;
+    right: 5px;
+    
+}
+
+
+
+.testimonio-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.testimonio__card{
+    width: 30%;
+    height: 750px;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 120%;
+    
+}
+
+.testimonio__img{
+    width: 100%;
+    height: 90%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+    
+}
+
+    
+.logo{
+    position: relative;
+    right: 40%;
+    bottom: 5px;
+    height: 80px;
+    
+}
+
+
+    
+}
+
+
+
+
